@@ -1,0 +1,293 @@
+/* General Reset */
+* {
+    margin: 9;
+    padding: 9;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .logo-black {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #002d72;
+  }
+  
+  .menu-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Slider */
+  .slider {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slide-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    background: #002d72;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Slider Arrows */
+  .arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 1rem;
+  }
+  
+  .arrow {
+    cursor: pointer;
+
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Introduction Section */
+.introduction {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.introduction-text {
+  flex: 1 1 50%;
+  font-size: 1rem;
+  color: #333;
+  max-width: 600px;
+}
+
+.introduction-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+  /* Cards */
+    /* Cards *
+
+/* Container for cards */
+/* Container for all cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;              
+  justify-content: center;       
+  gap: 2rem;                      
+  padding: 2rem;
+  max-width: 1440px;             
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+/* Individual card */
+.card {
+  flex: 1 1 calc(33.333% - 2rem); 
+  max-width: 400px;
+  min-width: 200px;
+  height: 201px;
+  background-color: #061c2c;
+  color: white;
+  padding: 2rem 1.5rem;
+  text-align: left;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Arrow styling */
+.card-arrow {
+  opacity: 0.698;
+  width: 44px;
+  height: 46px;
+  color:  #29a4e6;;
+}
+
+/* Text styling */
+.card-text {
+  font-size: 32px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: 'Open Sans';
+  width: 307px;
+height: 103px;
+
+}
+/* TAGS */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+/* Container for all cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem; /* added side padding for smaller screens */
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Individual card */
+.card {
+  flex: 1 1 calc(33.333% - 2rem);
+  max-width: 400px;
+  min-width: 250px;
+  height: auto;
+  background-color: #061c2c;
+  color: white;
+  padding: 2rem 1.5rem;
+  text-align: left;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-arrow {
+  opacity: 0.698;
+  width: 44px;
+  height: 46px;
+  color: #29a4e6;
+}
+
+.card-text {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: 'Open Sans';
+  width: 100%; /* removed fixed 307px */
+  height: auto;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  background: #0059b3;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-weight: 600;
+  border: 1px solid #061c2c;
+  height: 38px;
+  white-space: nowrap;
+  min-width: 160px;
+  justify-content: space-between;
+}
+
+.tag-arrow {
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  opacity: 0.698;
+}
+
+
+
+   /* Responsive behavior */
+   @media (max-width: 768px) {
+    .introduction {
+      flex-direction: column;
+      text-align: left;
+    }
+  
+    .introduction-text, .introduction-image {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .introduction-image img {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  }
